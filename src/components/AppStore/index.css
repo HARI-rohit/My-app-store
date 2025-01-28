@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container Styles */
+.AppStore {
+  text-align: center;
+  padding: 20px;
+}
+
+.AppStore h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Search Bar */
+.AppStore div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.AppStore input[type='search'] {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.AppStore input[type='search']:focus {
+  border-color: #007bff;
+}
+
+.AppStore img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Tabs Section */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.AppStore ul:first-of-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.AppStore ul:first-of-type li {
+  margin: 0 10px;
+}
+
+.TabItem {
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #007bff;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.TabItem.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.TabItem:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Apps List Section */
+.AppStore ul:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.AppItem {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.AppItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.AppItem img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.AppItem p {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}

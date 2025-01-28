@@ -1,0 +1,26 @@
+/* TabItem Styles */
+.TabItem button {
+  padding: 10px 20px;
+  border: none; /* Remove border */
+  border-radius: 20px; /* Keep rounded corners for aesthetic appeal */
+  background-color: transparent; /* Transparent background for a clean look */
+  color: #007bff; /* Text color */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.TabItem button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.TabItem button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.TabItem button:focus {
+  outline: none;
+}
